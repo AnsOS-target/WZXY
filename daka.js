@@ -35,7 +35,8 @@ function Sign(){
   }
 
   //const body =  `answers=["0"]&seq=`+ seq + `&temperature=温度&userId=&latitude=经度&longitude=纬度&country=中国&city=XX市&district=XX区&province=XX省&township=XX街道&street=XXXXX地址&myArea=`
-  const body = `自行抓包替换`
+ 
+  const body = `{"id":`+ logId +`,"signId":`+ id +`,"latitude":34.013364,"longitude":108.751667,"country":"中国","province":"陕西省","city":"西安市","district":"鄠邑区","township":"草堂街道"}`;
   
   const myRequest = {
       url: url,
